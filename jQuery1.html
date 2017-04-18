@@ -26,15 +26,26 @@ function swapHeadlines(){
  $('h2').text(swap1);
 }
 function noSubhed(){
-  var fadeh2 = $('h2').fadeOut();
-  var fadeh3 = $('h3').fadeOut();
+$('h2').fadeOut();
+$('h3').fadeOut();
 }
 function undo(){
-  var undoh2 = $('h2').show();
-  var undoh3 = $('h3').show();
+$('h2').show();
+$('h3').show();
+}
+function highlightByline(){
+$('.byline').addClass('highlight');
+}
+function unhighlightByline(){
+$('.byline').removeClass('highlight');
 }
 
 </script>
+<style>
+.highlight{
+  background: yellow;
+}
+</style>
   <title>jQuery test page</title>
 </head>
 <body>
