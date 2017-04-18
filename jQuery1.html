@@ -25,7 +25,14 @@ function swapHeadlines(){
  $('h1').text(swap2);
  $('h2').text(swap1);
 }
-
+function noSubhed(){
+  var fadeh2 = $('h2').fadeOut();
+  var fadeh3 = $('h3').fadeOut();
+}
+function undo(){
+  var undoh2 = $('h2').show();
+  var undoh3 = $('h3').show();
+}
 
 </script>
   <title>jQuery test page</title>
